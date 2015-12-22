@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<GradeBook class="CSE 598">
+    <Grades>
+        <Student>
+            <Name>Clark Kent</Name>
+            <ID>555-12-3456</ID>
+            <AssignedWork category="Exams">
+                <GradedWork>
+                    <Name>Mid Term</Name>
+                    <Grade>95.0</Grade>
+                </GradedWork>
+                <GradedWork>
+                    <Name>Final</Name>
+                    <Grade>95.0</Grade>
+                </GradedWork>
+            </AssignedWork>
+            <AssignedWork category="Assignments">
+                <GradedWork>
+                    <Name>Abbott</Name>
+                    <Grade>95.0</Grade>
+                </GradedWork>
+                <GradedWork>
+                    <Name>CRC</Name>
+                    <Grade>95.0</Grade>
+                </GradedWork>
+            </AssignedWork>
+            <AssignedWork category="Programming Assignments">
+                <GradedWork>
+                    <Name>Cretional Patterns</Name>
+                    <Grade>95.0</Grade>
+                </GradedWork>
+            </AssignedWork>
+            <LetterGrade>A</LetterGrade>
+        </Student>
+        <Student>
+            <Name>Bruce Wayne</Name>
+            <ID>555-12-6543</ID>
+            <AssignedWork category="Exams">
+                <GradedWork>
+                    <Name>Mid Term</Name>
+                    <Grade>74.0</Grade>
+                </GradedWork>
+                <GradedWork>
+                    <Name>Final</Name>
+                    <Grade>74.0</Grade>
+                </GradedWork>
+            </AssignedWork>
+            <AssignedWork category="Assignments">
+                <GradedWork>
+                    <Name>Abbott</Name>
+                    <Grade>74.0</Grade>
+                </GradedWork>
+                <GradedWork>
+                    <Name>CRC</Name>
+                    <Grade>74.0</Grade>
+                </GradedWork>
+            </AssignedWork>
+            <AssignedWork category="Programming Assignments">
+                <GradedWork>
+                    <Name>Cretional Patterns</Name>
+                    <Grade>74.0</Grade>
+                </GradedWork>
+            </AssignedWork>
+            <LetterGrade>C</LetterGrade>
+        </Student>
+    </Grades>
+</GradeBook>

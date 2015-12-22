@@ -1,0 +1,66 @@
+{
+    "GradeBook": {
+        "GradingSchema": {
+            "GradeItem": [
+                {
+                    "Category": "Exams",
+                    "Percentage": "50"
+                },
+                {
+                    "Category": "Assignments",
+                    "Percentage": "20"
+                },
+                {
+                    "Category": "Programming Assignments",
+                    "Percentage": "20"
+                },
+                {
+                    "Category": "Term Paper",
+                    "Percentage": "10"
+                }
+            ]
+        },
+        "Grades": {
+            "Student": {
+                "Name": "Clark Kent",
+                "ID": "555-12-3456",
+                "AssignedWork": [
+                    {
+                        "GradedWork": [
+                            {
+                                "Name": "Mid Term",
+                                "Grade": "20"
+                            },
+                            {
+                                "Name": "Final",
+                                "Grade": "80"
+                            }
+                        ],
+                        "-category": "Exms"
+                    },
+                    {
+                        "GradedWork": [
+                            {
+                                "Name": "Abbott",
+                                "Grade": "80"
+                            },
+                            {
+                                "Name": "CRC",
+                                "Grade": "95"
+                            }
+                        ],
+                        "-category": "Ass"
+                    },
+                    {
+                        "GradedWork": {
+                            "Name": "Cretional Patterns",
+                            "Grade": "180"
+                        },
+                        "-category": "Programming Assignments"
+                    }
+                ]
+            }
+        },
+        "-class": "CSE 598"
+    }
+}
