@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.example.org/EligibleProductInfo" 
+	xmlns:tns="http://www.example.org/EligibleProductInfo"
+	elementFormDefault="qualified">
+
+
+	<xsd:simpleType name="ProductIdType">
+		<xsd:restriction base="xsd:int" />
+	</xsd:simpleType>
+
+	<xsd:simpleType name="IsMutuallyExclusiveType">
+		<xsd:restriction base="xsd:boolean" />
+	</xsd:simpleType>
+
+	<xsd:simpleType name="ProductDescriptionType">
+		<xsd:restriction base="xsd:string" />
+	</xsd:simpleType>
+
+	<xsd:simpleType name="IsActiveType">
+		<xsd:restriction base="xsd:boolean"></xsd:restriction>
+	</xsd:simpleType>
+
+
+	<xsd:element name="ProductId" type="tns:ProductIdType" />
+	<xsd:element name="IsMutuallyExclusive" type="tns:IsMutuallyExclusiveType" />
+	<xsd:element name="ProductDescription" type="tns:ProductDescriptionType" />
+	<xsd:element name="IsActive" type="tns:IsActiveType" />
+
+	<xsd:complexType name="MutuallyExclusiveProductType">
+		<xsd:sequence>
+			<xsd:element ref="tns:ProductId" />
+			<xsd:element ref="tns:ProductDescription" />
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:element name="MutuallyExclusiveProduct" type="tns:MutuallyExclusiveProductType" />
+
+	<xsd:complexType name="EligibleProductType">
+		<xsd:sequence>
+			<xsd:element ref="tns:ProductId" />
+			<xsd:element ref="tns:ProductDescription" />
+			<xsd:element ref="tns:IsActive" />
+			<xsd:element ref="tns:IsMutuallyExclusive" />
+			<xsd:element ref="tns:MutuallyExclusiveProduct"
+				minOccurs="0" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:element name="EligibleProduct" type="tns:EligibleProductType" />
+	<xsd:complexType name="EligibleProductListType">
+		<xsd:sequence>
+			<xsd:element ref="tns:EligibleProduct" minOccurs="0"
+				maxOccurs="unbounded" />
+		</xsd:sequence>
+	</xsd:complexType>
+	
+	<xsd:element name="EligibleProductList" type="tns:EligibleProductListType"/>
+</xsd:schema>
